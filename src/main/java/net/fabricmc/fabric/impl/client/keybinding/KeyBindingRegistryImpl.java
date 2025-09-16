@@ -29,6 +29,7 @@ import net.minecraft.client.options.KeyBinding;
 import net.fabricmc.fabric.mixin.client.keybinding.KeyBindingAccessor;
 
 public final class KeyBindingRegistryImpl {
+	@SuppressWarnings("unused")
 	private static final Logger LOGGER = LogManager.getLogger();
 
 	private static final List<KeyBinding> moddedKeyBindings = Lists.newArrayList();
