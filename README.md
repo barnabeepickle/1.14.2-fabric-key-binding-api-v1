@@ -1,9 +1,3 @@
-# Fabric Example Mod
+# Fabric Key Binding API v1 for 1.14.2
 
-## Setup
-
-For setup instructions please see the [fabric documentation page](https://docs.fabricmc.net/develop/getting-started/setting-up-a-development-environment) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod is a port of the fabric-key-binding-api-v1 component of the fabric api to minecraft version 1.14.2 as it is not included in the normal fabric api.
