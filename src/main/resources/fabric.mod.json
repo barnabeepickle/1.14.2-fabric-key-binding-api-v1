@@ -1,41 +1,31 @@
 {
-	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
-		]
-	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.8",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "fabric-key-binding-api-v1",
+  "name": "Fabric Key Binding API (v1) 1.14.2 Port",
+  "version": "${version}",
+  "environment": "client",
+  "license": "Apache-2.0",
+  "icon": "assets/fabric-key-binding-api-v1/icon.png",
+  "contact": {
+    "homepage": "https://fabricmc.net",
+    "issues": "https://github.com/barnabeepickle/1.14.2-fabric-key-binding-api-v1/issues",
+    "sources": "https://github.com/barnabeepickle/1.14.2-fabric-key-binding-api-v1"
+  },
+  "authors": [
+    "FabricMC"
+  ],
+    "contributors": [
+    "barnabeepickle"
+  ],
+  "depends": {
+    "fabricloader": ">=0.6.1",
+    "minecraft": "<1.15-"
+  },
+  "description": "Key Binding registry API v1, ported to 1.14.2",
+  "mixins": [
+    "fabric-key-binding-api-v1.mixins.json"
+  ],
+  "custom": {
+    "modmenu:clientsideOnly": true
+  }
 }
